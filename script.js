@@ -10,7 +10,7 @@ function firstWord(s) {
 		}
 		
 	}
-	return s1+'
+	return s1+'''
 }
  
 // Do not change the code below
