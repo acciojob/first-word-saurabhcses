@@ -1,18 +1,18 @@
 function firstWord(s) {
-  // your code here
-	let s1=""
-	let a=[]
-	for (let i = 1; i < s.length; i++) {
-		if(s[i]!=" "){
-			s1=s1+s[i]
-		}
-		else{
-				
-			break
-		}
-		
-	}
-	return s1
+  let s1 = "";
+  let started = false;
+
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] !== " ") {
+      s1 += s[i];
+      started = true;
+    } else if (started) {
+      // If we already started the word and hit a space, break
+      break;
+    }
+  }
+
+  return s1 || '';
 }
  
 // Do not change the code below 
