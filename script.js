@@ -1,10 +1,21 @@
-function firstWord(str) {
-  // Trim the string and split by one or more whitespace characters
-  const words = str.trim().split(/\s+/);
-  // Return the first word or empty string if none exists
-  return words[0] || '';
+function firstWord(s) {
+  // your code here
+	let s1=""
+	let a=[]
+	for (let i = 1; i < s.length; i++) {
+		if(s[i]!=" "){
+			s1=s1+s[i]
+		}
+		else{
+				
+			break
+		}
+		
+	}
+	return s1
 }
+ 
+// Do not change the code below 
 
-// Do not change the code below
 const s = prompt("Enter String:");
 alert(firstWord(s));
