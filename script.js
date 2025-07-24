@@ -6,11 +6,12 @@ function firstWord(s) {
 			s1=s1+s[i]
 		}
 		else{
+			s1=s1+'
 			break
 		}
 		
 	}
-	return s1+'''
+	return s1
 }
  
 // Do not change the code below
