@@ -1,12 +1,12 @@
 function firstWord(s) {
   let s1 = "";
-  //let started = false;
+  let started = false;
 
   for (let i = 0; i < s.length; i++) {
     if (s[i] !== " ") {
       s1 += s[i];
-      //started = true;
-    } else  {
+      started = true;
+    } else if (started) {
       // If we already started the word and hit a space, break
       break;
     }
