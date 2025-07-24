@@ -1,7 +1,7 @@
 function firstWord(s) {
   // your code here
 	let s1=""
-	for (let index = 0; index < s.length; index++) {
+	for (let i = 0; index < s.length; i++) {
 		if(s[i]!=" "){
 			s1=s1+s[i]
 		}
